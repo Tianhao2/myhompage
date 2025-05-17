@@ -1,0 +1,220 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <main id="main">
+   <!-- ======= Our Portfolio Section ======= -->
+   <section class="breadcrumbs">
+    <div class="container">
+     <div class="d-flex justify-content-between align-items-center">
+      <h2>
+       プロジェクト
+      </h2>
+      <ol>
+       <li>
+        <a href="/">
+         ホーム
+        </a>
+       </li>
+       <li>
+        プロジェクト
+       </li>
+      </ol>
+     </div>
+    </div>
+   </section>
+   <!-- End Our Portfolio Section -->
+   <!-- ======= Portfolio Section ======= -->
+   <section class="portfolio">
+    <div class="container">
+     <div class="row">
+      <div class="col-lg-12">
+       <ul id="portfolio-flters">
+        <li class="filter-active" data-filter="*">
+         すべて
+        </li>
+        <li data-filter=".filter-app">
+         製品導入
+        </li>
+        <li data-filter=".filter-card">
+         開発支援
+        </li>
+        <li data-filter=".filter-web">
+         請負開発
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="row portfolio-container" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out">
+      <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+       <div class="portfolio-item">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/portfolio/portfolio-1.jpg' %}"/>
+        <div class="portfolio-info">
+         <h3>
+          製品導入
+         </h3>
+         <p style="color: white;">
+          ある大手銀行CRMシステム
+         </p>
+         <div>
+          <a class="portfolio-lightbox" data-gallery="portfolioGallery" href="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" title="製品導入">
+           <i class="bx bx-plus">
+           </i>
+          </a>
+          <a href="/portfolio-details1/" title="Portfolio Details">
+           <i class="bx bx-link">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
+       <div class="portfolio-item">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/portfolio/portfolio-2.jpg' %}"/>
+        <div class="portfolio-info">
+         <h3>
+          開発支援
+         </h3>
+         <p style="color: white;">
+          オンライン決済システムの設計と開発
+         </p>
+         <div>
+          <a class="portfolio-lightbox" data-gallery="portfolioGallery" href="{% static 'assets/img/portfolio/portfolio-2.jpg' %}" title="Web 3">
+           <i class="bx bx-plus">
+           </i>
+          </a>
+          <a href="/portfolio-details2/" title="Portfolio Details">
+           <i class="bx bx-link">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+       <div class="portfolio-item">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/portfolio/portfolio-3.jpg' %}"/>
+        <div class="portfolio-info">
+         <h3>
+          製品導入
+         </h3>
+         <p style="color: white;">
+          生産業者A様の販売支援システム
+         </p>
+         <div>
+          <a class="portfolio-lightbox" data-gallery="portfolioGallery" href="{% static 'assets/img/portfolio/portfolio-3.jpg' %}" title="App 2">
+           <i class="bx bx-plus">
+           </i>
+          </a>
+          <a href="/portfolio-details3/" title="Portfolio Details">
+           <i class="bx bx-link">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
+       <div class="portfolio-item">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/portfolio/portfolio-4.jpg' %}"/>
+        <div class="portfolio-info">
+         <h3>
+          請負開発
+         </h3>
+         <p style="color: white;">
+          クリニックアンケート調査システム導入一括請負開発
+         </p>
+         <div>
+          <a class="portfolio-lightbox" data-gallery="portfolioGallery" href="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" title="Card 2">
+           <i class="bx bx-plus">
+           </i>
+          </a>
+          <a href="/portfolio-details4/" title="Portfolio Details">
+           <i class="bx bx-link">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+       <div class="portfolio-item">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/portfolio/portfolio-5.jpg' %}"/>
+        <div class="portfolio-info">
+         <h3>
+          製品導入
+         </h3>
+         <p style="color: white;">
+          外資保険会社基幹システム
+         </p>
+         <div>
+          <a class="portfolio-lightbox" data-gallery="portfolioGallery" href="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" title="Web 2">
+           <i class="bx bx-plus">
+           </i>
+          </a>
+          <a href="/portfolio-details5/" title="Portfolio Details">
+           <i class="bx bx-link">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!--  <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+            <div class="portfolio-item">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3>App 3</h3>
+                <div>
+                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
+            <div class="portfolio-item">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3>Card 1</h3>
+                <div>
+                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
+            <div class="portfolio-item">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3>Card 3</h3>
+                <div>
+                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
+            <div class="portfolio-item">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3>Web 1</h3>
+                <div>
+                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+     </div>
+    </div>
+   </section>
+   <!-- End Portfolio Section -->
+  </main>
+  <!-- End #main -->
+  {% endblock %}

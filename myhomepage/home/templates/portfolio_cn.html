@@ -1,0 +1,168 @@
+{% extends 'base_cn.html' %}
+{% load static %}
+{% block content %}
+  <main id="main">
+   <!-- ======= 项目部分 ======= -->
+   <section class="breadcrumbs">
+    <div class="container">
+     <div class="d-flex justify-content-between align-items-center">
+      <h2>
+       项目
+      </h2>
+      <ol>
+       <li>
+        <a href="/cn/">
+         首页
+        </a>
+       </li>
+       <li>
+        项目
+       </li>
+      </ol>
+     </div>
+    </div>
+   </section>
+   <!-- 项目部分结束 -->
+   <!-- ======= 项目展示部分 ======= -->
+   <section class="portfolio">
+    <div class="container">
+     <div class="row">
+      <div class="col-lg-12">
+       <ul id="portfolio-flters">
+        <li class="filter-active" data-filter="*">
+         全部
+        </li>
+        <li data-filter=".filter-app">
+         产品导入
+        </li>
+        <li data-filter=".filter-card">
+         开发支持
+        </li>
+        <li data-filter=".filter-web">
+         承包开发
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="row portfolio-container" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out">
+      <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+       <div class="portfolio-item">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/portfolio/portfolio-1.jpg' %}"/>
+        <div class="portfolio-info">
+         <h3>
+          产品导入
+         </h3>
+         <p style="color: white;">
+          某大型银行CRM系统
+         </p>
+         <div>
+          <a class="portfolio-lightbox" data-gallery="portfolioGallery" href="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" title="产品导入">
+           <i class="bx bx-plus">
+           </i>
+          </a>
+          <a href="/cn/portfolio-details1/" title="项目详情">
+           <i class="bx bx-link">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
+       <div class="portfolio-item">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/portfolio/portfolio-2.jpg' %}"/>
+        <div class="portfolio-info">
+         <h3>
+          开发支持
+         </h3>
+         <p style="color: white;">
+          在线支付系统的设计与开发
+         </p>
+         <div>
+          <a class="portfolio-lightbox" data-gallery="portfolioGallery" href="{% static 'assets/img/portfolio/portfolio-2.jpg' %}" title="开发支持">
+           <i class="bx bx-plus">
+           </i>
+          </a>
+          <a href="/cn/portfolio-details2/" title="项目详情">
+           <i class="bx bx-link">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+       <div class="portfolio-item">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/portfolio/portfolio-3.jpg' %}"/>
+        <div class="portfolio-info">
+         <h3>
+          产品导入
+         </h3>
+         <p style="color: white;">
+          生产商A的销售支持系统
+         </p>
+         <div>
+          <a class="portfolio-lightbox" data-gallery="portfolioGallery" href="{% static 'assets/img/portfolio/portfolio-3.jpg' %}" title="产品导入">
+           <i class="bx bx-plus">
+           </i>
+          </a>
+          <a href="/cn/portfolio-details3/" title="项目详情">
+           <i class="bx bx-link">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
+       <div class="portfolio-item">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/portfolio/portfolio-4.jpg' %}"/>
+        <div class="portfolio-info">
+         <h3>
+          承包开发
+         </h3>
+         <p style="color: white;">
+          诊所问卷调查系统导入承包开发
+         </p>
+         <div>
+          <a class="portfolio-lightbox" data-gallery="portfolioGallery" href="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" title="承包开发">
+           <i class="bx bx-plus">
+           </i>
+          </a>
+          <a href="/cn/portfolio-details4/" title="项目详情">
+           <i class="bx bx-link">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+       <div class="portfolio-item">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/portfolio/portfolio-5.jpg' %}"/>
+        <div class="portfolio-info">
+         <h3>
+          产品导入
+         </h3>
+         <p style="color: white;">
+          外资保险公司核心系统
+         </p>
+         <div>
+          <a class="portfolio-lightbox" data-gallery="portfolioGallery" href="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" title="产品导入">
+           <i class="bx bx-plus">
+           </i>
+          </a>
+          <a href="/cn/portfolio-details5/" title="项目详情">
+           <i class="bx bx-link">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- 项目展示部分结束 -->
+  </main>
+  {% endblock %}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head>
+  {% load static %}
+  {% load static %}
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   项目详情 - intelligentbrain有限公司
+  </title>
+  <meta content="" name="description"/>
+  <meta content="" name="keywords"/>
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon"/>
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet"/>
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet"/>
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet"/>
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet"/>
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet"/>
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet"/>
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet"/>
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet"/>
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet"/>
+  <!-- =======================================================
+  * Template Name: Moderna - v4.11.0
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+ </head>
+ <body>
+  <!-- ======= Header ======= -->
+  <header class="fixed-top d-flex align-items-center" id="header">
+   <div class="container d-flex justify-content-between align-items-center">
+    <div class="logo">
+     <h1 class="text-light">
+      <a href="/cn/">
+       <span>
+        intelligentbrain
+       </span>
+      </a>
+     </h1>
+     <!-- Uncomment below if you prefer to use an image logo -->
+     <!-- <a href="index_cn.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    </div>
+    <nav class="navbar" id="navbar">
+     <ul>
+      <li>
+       <a href="/cn/">
+        首页
+       </a>
+      </li>
+      <li>
+       <a href="/cn/about/">
+        企业信息
+       </a>
+      </li>
+      <li>
+       <a href="/cn/services/">
+        服务
+       </a>
+      </li>
+      <li>
+       <a class="active" href="/cn/portfolio/">
+        项目
+       </a>
+      </li>
+      <li>
+       <a href="/cn/contact/">
+        联系我们
+       </a>
+      </li>
+      <li>
+       <a href="/cn/recruit/">
+        招聘信息
+       </a>
+      </li>
+      <li>
+       <a href="#" id="lang-switch">
+        切换到日语
+       </a>
+      </li>
+     </ul>
+     <i class="bi bi-list mobile-nav-toggle">
+     </i>
+    </nav>
+    <!-- .navbar -->
+   </div>
+  </header>
+  <!-- End Header -->
+  <script>
+   document.getElementById('lang-switch').addEventListener('click', function(event) {
+      event.preventDefault();
+      const currentLang = window.location.pathname.startsWith('/cn/') ? 'cn' : 'jp';
+      const newPage = currentLang === 'cn' ? '/portfolio-details5/' : '/cn/portfolio-details5/';
+      window.location.href = newPage;
+    });
+  </script>
+  <main id="main">
+   <!-- ======= Our Portfolio Section ======= -->
+   <section class="breadcrumbs">
+    <div class="container">
+     <div class="d-flex justify-content-between align-items-center">
+      <h2>
+       项目详情
+      </h2>
+      <ol>
+       <li>
+        <a href="/cn/">
+         首页
+        </a>
+       </li>
+       <li>
+        <a href="/cn/portfolio/">
+         项目
+        </a>
+       </li>
+       <li>
+        项目详情
+       </li>
+      </ol>
+     </div>
+    </div>
+   </section>
+   <!-- End Our Portfolio Section -->
+   <!-- ======= Portfolio Details Section ======= -->
+   <section class="portfolio-details" id="portfolio-details">
+    <div class="container">
+     <div class="row gy-4">
+      <div class="col-lg-8">
+       <div class="portfolio-details-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+         <div class="swiper-slide">
+          <img alt="" src="{% static 'assets/img/portfolio/portfolio-5.jpg' %}"/>
+         </div>
+        </div>
+        <div class="swiper-pagination">
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4">
+       <div class="portfolio-info">
+        <h3>
+         项目信息
+        </h3>
+        <ul>
+         <li>
+          <strong>
+           类别
+          </strong>
+          : Salesforce CRM
+         </li>
+         <li>
+          <strong>
+           客户
+          </strong>
+          : 大型保险公司P公司
+         </li>
+         <li>
+          <strong>
+           项目时间
+          </strong>
+          : 2021年5月1日
+         </li>
+        </ul>
+       </div>
+       <div class="portfolio-description">
+        <h2>
+         大型保险代理CRM系统
+        </h2>
+        <p>
+         在Salesforce Cloud平台上构建的保险代理CRM系统实现了客户数据的全公司统一管理，使代理人、保险公司员工和客户之间的沟通更加高效。
+        </p>
+        <p>
+         业务模式构建是获得竞争优势的关键
+        </p>
+        <p>
+         过去，各代理店持有的客户数据存在信息重复和分析困难的问题，但通过本项目构建的新代理店系统，实现了客户数据的统一管理，保险公司与代理店之间的信息联动更加顺畅。此外，能够创建360度客户视图，提供更好的服务，从而大大提高了客户满意度。
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End Portfolio Details Section -->
+  </main>
+  <!-- End #main -->
+  {% endblock %}

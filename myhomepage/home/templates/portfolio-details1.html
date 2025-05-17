@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <main id="main">
+   <!-- ======= Our Portfolio Section ======= -->
+   <section class="breadcrumbs">
+    <div class="container">
+     <div class="d-flex justify-content-between align-items-center">
+      <h2>
+       プロジェクト 詳細
+      </h2>
+      <ol>
+       <li>
+        <a href="/">
+         ホーム
+        </a>
+       </li>
+       <li>
+        <a href="/portfolio/">
+         プロジェクト
+        </a>
+       </li>
+       <li>
+        プロジェクト 詳細
+       </li>
+      </ol>
+     </div>
+    </div>
+   </section>
+   <!-- End Our Portfolio Section -->
+   <!-- ======= Portfolio Details Section ======= -->
+   <section class="portfolio-details" id="portfolio-details">
+    <div class="container">
+     <div class="row gy-4">
+      <div class="col-lg-8">
+       <div class="portfolio-details-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+         <div class="swiper-slide">
+          <img alt="" src="{% static 'assets/img/portfolio/portfolio-1.jpg' %}"/>
+         </div>
+        </div>
+        <div class="swiper-pagination">
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4">
+       <div class="portfolio-info">
+        <h3>
+         プロジェクト情報
+        </h3>
+        <ul>
+         <li>
+          <strong>
+           カテゴリー
+          </strong>
+          : Salesforce CRM
+         </li>
+         <li>
+          <strong>
+           お客様
+          </strong>
+          : ある銀行様
+         </li>
+         <li>
+          <strong>
+           プロジェクト時間
+          </strong>
+          : 01 March, 2020
+         </li>
+        </ul>
+       </div>
+       <div class="portfolio-description">
+        <h2>
+         ある大手銀行CRMシステム
+        </h2>
+        <p>
+         Salesforce Cloudプラットフォーム上で構築したCRMシステムが顧客データを全社で一元化し統合管理動的データもリアルタイム共有実現
+        </p>
+        <p>
+         ビジネスモデル構築が競争優位性獲得のカギを握る
+
+                個人・法人顧客の多様な金融ニーズに応える商品・サービスを展開する当銀行は、数十万人を超えるオンラインバンキングユーザを有するマルチチャネル型銀行である。 ビジネス上の優位性の獲得を求められるため、Salesforceのパワーを発揮して店舗でお客様に接する約200名のスタッフが持つコンサルティング力と、オンラインサービスにおいて蓄積されたデジタルデータを融合し、AI等のテクノロジーなども活用しながら、顧客満足の向上、エンゲージメント強化に寄与する新たな顧客体験の創出した。
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End Portfolio Details Section -->
+  </main>
+  <!-- End #main -->
+  {% endblock %}

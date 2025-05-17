@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      # 1. 创建干净的打包目录
+      - mkdir -p output/scripts
+
+      # 2. 拷贝项目代码（排除 deploy、buildspec、db 等）
+      - cp -r home intelligentbrainhp survey manage.py requirements.txt db.sqlite3 output/
+
+      # 3. 拷贝 deploy 中 webapp 所需的文件
+      - cp deploy/webapp/appspec.yml output/
+      - cp deploy/webapp/scripts/* output/scripts/
+
+artifacts:
+  files:
+    - output/**/*
+  discard-paths: no

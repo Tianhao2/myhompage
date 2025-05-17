@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ category }} 学习会问卷调查</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+  <h2 class="mb-4 text-center text-primary">{{ category }} 学习会问卷调查</h2>
+
+  <form method="post" class="border p-4 rounded bg-light shadow-sm">
+    {% csrf_token %}
+
+    <div class="mb-3">
+      <label for="name" class="form-label">姓名：</label>
+      <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">邮箱：</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="q1" class="form-label">1. 您对课程内容的满意度？</label>
+      <select class="form-select" id="q1" name="q1">
+        <option>非常满意</option>
+        <option>满意</option>
+        <option>一般</option>
+        <option>不满意</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="q2" class="form-label">2. 授课老师是否清晰易懂？</label>
+      <select class="form-select" id="q2" name="q2">
+        <option>非常清晰</option>
+        <option>还算清楚</option>
+        <option>有些难懂</option>
+        <option>完全听不懂</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="q3" class="form-label">3. 学习节奏是否合适？</label>
+      <select class="form-select" id="q3" name="q3">
+        <option>节奏刚刚好</option>
+        <option>太快了</option>
+        <option>太慢了</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="q4" class="form-label">4. 课程材料是否充分？</label>
+      <input type="text" class="form-control" id="q4" name="q4">
+    </div>
+
+    <div class="mb-3">
+      <label for="q5" class="form-label">5. 练习内容是否有帮助？</label>
+      <input type="text" class="form-control" id="q5" name="q5">
+    </div>
+
+    <div class="mb-3">
+      <label for="q6" class="form-label">6. 您希望增加哪些内容？</label>
+      <textarea class="form-control" id="q6" name="q6" rows="2"></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label for="q7" class="form-label">7. 对本次课程的总体评分？</label>
+      <input type="text" class="form-control" id="q7" name="q7">
+    </div>
+
+    <div class="mb-3">
+      <label for="q8" class="form-label">8. 参加该课程的动机？</label>
+      <input type="text" class="form-control" id="q8" name="q8">
+    </div>
+
+    <div class="mb-3">
+      <label for="q9" class="form-label">9. 对组织方式的意见或建议？</label>
+      <textarea class="form-control" id="q9" name="q9" rows="2"></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label for="q10" class="form-label">10. 未来还希望开设哪些主题？</label>
+      <textarea class="form-control" id="q10" name="q10" rows="2"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100">提交</button>
+  </form>
+</div>
+</body>
+</html>

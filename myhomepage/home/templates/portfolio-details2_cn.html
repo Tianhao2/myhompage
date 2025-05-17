@@ -1,0 +1,104 @@
+{% extends 'base_cn.html' %}
+{% load static %}
+{% block content %}
+  <main id="main">
+   <!-- ======= 项目详情部分 ======= -->
+   <section class="breadcrumbs">
+    <div class="container">
+     <div class="d-flex justify-content-between align-items-center">
+      <h2>
+       项目详情
+      </h2>
+      <ol>
+       <li>
+        <a href="/cn/">
+         首页
+        </a>
+       </li>
+       <li>
+        <a href="/cn/portfolio/">
+         项目
+        </a>
+       </li>
+       <li>
+        项目详情
+       </li>
+      </ol>
+     </div>
+    </div>
+   </section>
+   <!-- 项目详情部分结束 -->
+   <!-- ======= 项目详情内容部分 ======= -->
+   <section class="portfolio-details" id="portfolio-details">
+    <div class="container">
+     <div class="row gy-4">
+      <div class="col-lg-8">
+       <div class="portfolio-details-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+         <div class="swiper-slide">
+          <img alt="" src="{% static 'assets/img/portfolio/portfolio-2.jpg' %}"/>
+         </div>
+        </div>
+        <div class="swiper-pagination">
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4">
+       <div class="portfolio-info">
+        <h3>
+         项目信息
+        </h3>
+        <ul>
+         <li>
+          <strong>
+           类别
+          </strong>
+          : Web系统（Terasoluna）
+         </li>
+         <li>
+          <strong>
+           客户
+          </strong>
+          : 日本大型支付公司
+         </li>
+         <li>
+          <strong>
+           项目时间
+          </strong>
+          : 2014年5月1日
+         </li>
+        </ul>
+       </div>
+       <div class="portfolio-description">
+        <h2>
+         在线支付系统的设计与开发
+        </h2>
+        <p>
+         在线支付系统构建了来自加盟店的支付、积分计算、转账等功能。
+        </p>
+        <p>
+         为了提供让客户满意的服务，我们在以下方面组建了团队：
+        </p>
+        <ul>
+         <li>
+          选择了具有良好领导能力的项目经理，并配备了副领导作为辅助。
+         </li>
+         <li>
+          调配了熟悉支付业务的设计经验者，并任命为教育负责人。
+         </li>
+         <li>
+          由于是在线支付系统，因此调配了具有安全应对经验和性能应对经验的系统工程师。
+         </li>
+         <li>
+          对于经验较浅的成员，定期推进技术和业务培训。
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- 项目详情内容部分结束 -->
+  </main>
+  <!-- End #main -->
+  {% endblock %}

@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <main id="main">
+
+    <!-- ======= Our Portfolio Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>プロジェクト 詳細</h2>
+          <ol>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="portfolio.html">プロジェクト</a></li>
+            <li>プロジェクト 詳細</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Our Portfolio Section -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-3.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>プロジェクト情報</h3>
+              <ul>
+                <li><strong>カテゴリー</strong>:Salesforce CRM</li>
+                <li><strong>お客様</strong>: 生産業者A様</li>
+                <li><strong>プロジェクト時間</strong>: 01 Dec, 2019</li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>生産業者A様の販売支援システム</h2>
+              <p>
+                　　Salesforce CRMシステム上の取引先、商談管理機能、製品のデザイン、各部門連動および外部ERPシステムとの連携機能を構築しました。
+              </p>
+              <p>　　お客様のDX戦略を全力でサポートします</p>
+
+			<ul>
+	            <li>お客様のDX戦略方針を理解したうえで、システム対応案を提案しました。</li>
+	            <li>ユーザ視点から、お客様が抱えた課題をちゃんと把握し、確実に解決できる方法を模索、先端技術で解決道を見つかりました。</li>
+	            <li>お客様の成功が弊社の成功である信念を徹底しておきたいと考えております。</li>
+            </ul>
+              
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+  {% endblock %}

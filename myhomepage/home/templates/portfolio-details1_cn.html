@@ -1,0 +1,92 @@
+{% extends 'base_cn.html' %}
+{% load static %}
+{% block content %}
+  <main id="main">
+   <!-- ======= 项目详情部分 ======= -->
+   <section class="breadcrumbs">
+    <div class="container">
+     <div class="d-flex justify-content-between align-items-center">
+      <h2>
+       项目详情
+      </h2>
+      <ol>
+       <li>
+        <a href="/cn/">
+         首页
+        </a>
+       </li>
+       <li>
+        <a href="/cn/portfolio/">
+         项目
+        </a>
+       </li>
+       <li>
+        项目详情
+       </li>
+      </ol>
+     </div>
+    </div>
+   </section>
+   <!-- 项目详情部分结束 -->
+   <!-- ======= 项目详情内容部分 ======= -->
+   <section class="portfolio-details" id="portfolio-details">
+    <div class="container">
+     <div class="row gy-4">
+      <div class="col-lg-8">
+       <div class="portfolio-details-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+         <div class="swiper-slide">
+          <img alt="" src="{% static 'assets/img/portfolio/portfolio-1.jpg' %}"/>
+         </div>
+        </div>
+        <div class="swiper-pagination">
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4">
+       <div class="portfolio-info">
+        <h3>
+         项目信息
+        </h3>
+        <ul>
+         <li>
+          <strong>
+           类别
+          </strong>
+          : Salesforce CRM
+         </li>
+         <li>
+          <strong>
+           客户
+          </strong>
+          : 某银行
+         </li>
+         <li>
+          <strong>
+           项目时间
+          </strong>
+          : 2020年3月1日
+         </li>
+        </ul>
+       </div>
+       <div class="portfolio-description">
+        <h2>
+         某大型银行CRM系统
+        </h2>
+        <p>
+         基于Salesforce云平台构建的CRM系统，实现了客户数据在全公司范围内的统一管理和动态数据的实时共享。
+        </p>
+        <p>
+         商业模式的构建是获得竞争优势的关键。
+
+                该银行为满足个人和企业客户的多样化金融需求，提供多种产品和服务，拥有数十万在线银行用户，是一家多渠道银行。为了获得商业上的竞争优势，利用Salesforce的强大功能，将约200名与客户接触的员工的咨询能力与在线服务中积累的数字数据相结合，并利用AI等技术，提升客户满意度，增强客户参与度，创造了全新的客户体验。
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- 项目详情内容部分结束 -->
+  </main>
+  <!-- End #main -->
+  {% endblock %}

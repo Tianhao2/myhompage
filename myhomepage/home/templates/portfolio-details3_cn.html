@@ -1,0 +1,101 @@
+{% extends 'base_cn.html' %}
+{% load static %}
+{% block content %}
+  <main id="main">
+   <!-- ======= 项目详情部分 ======= -->
+   <section class="breadcrumbs">
+    <div class="container">
+     <div class="d-flex justify-content-between align-items-center">
+      <h2>
+       项目详情
+      </h2>
+      <ol>
+       <li>
+        <a href="/cn/">
+         首页
+        </a>
+       </li>
+       <li>
+        <a href="/cn/portfolio/">
+         项目
+        </a>
+       </li>
+       <li>
+        项目详情
+       </li>
+      </ol>
+     </div>
+    </div>
+   </section>
+   <!-- 项目详情部分结束 -->
+   <!-- ======= 项目详情内容部分 ======= -->
+   <section class="portfolio-details" id="portfolio-details">
+    <div class="container">
+     <div class="row gy-4">
+      <div class="col-lg-8">
+       <div class="portfolio-details-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+         <div class="swiper-slide">
+          <img alt="" src="{% static 'assets/img/portfolio/portfolio-3.jpg' %}"/>
+         </div>
+        </div>
+        <div class="swiper-pagination">
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4">
+       <div class="portfolio-info">
+        <h3>
+         项目信息
+        </h3>
+        <ul>
+         <li>
+          <strong>
+           类别
+          </strong>
+          : Salesforce CRM
+         </li>
+         <li>
+          <strong>
+           客户
+          </strong>
+          : 生产商A
+         </li>
+         <li>
+          <strong>
+           项目时间
+          </strong>
+          : 2019年12月1日
+         </li>
+        </ul>
+       </div>
+       <div class="portfolio-description">
+        <h2>
+         生产商A的销售支持系统
+        </h2>
+        <p>
+         在Salesforce CRM系统上构建了客户管理、商谈管理、产品设计、各部门联动以及与外部ERP系统的集成功能。
+        </p>
+        <p>
+         全力支持客户的数字化转型战略
+        </p>
+        <ul>
+         <li>
+          在理解客户的数字化转型战略方针的基础上，提出了系统应对方案。
+         </li>
+         <li>
+          从用户的角度出发，准确把握客户面临的课题，探索切实可行的解决方案，并通过先进技术找到解决途径。
+         </li>
+         <li>
+          我们坚信，客户的成功就是我们的成功。
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- 项目详情内容部分结束 -->
+  </main>
+  <!-- End #main -->
+  {% endblock %}

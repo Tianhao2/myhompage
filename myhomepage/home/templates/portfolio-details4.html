@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <main id="main">
+
+    <!-- ======= Our Portfolio Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>プロジェクト 詳細</h2>
+          <ol>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="portfolio.html">プロジェクト</a></li>
+            <li>プロジェクト 詳細</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Our Portfolio Section -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-4.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>プロジェクト情報</h3>
+              <ul>
+                <li><strong>カテゴリー</strong>:IOSアプリケーション</li>
+                <li><strong>お客様</strong>: 都内のある内科クリニック様</li>
+                <li><strong>プロジェクト時間</strong>: 01 JUL, 2021</li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>クリニックアンケート調査システム導入一括請負開発</h2>
+              <p>
+                　　初診者向けのアンケート調査用システム設計と製造を請け負いました。
+              </p>
+              <p>　　クリニックの医者さんと何回要件を打ち合わせした上で、Ipad上のアプリケーションの機能設計と実装を行いました。</p>
+              <p>　　下記の機能を実現しました。</p>
+
+			<ul>
+	            <li>アンケート登録機能</li>
+	            <li>データ転送機能</li>
+	            <li>メール一発送信機能</li>
+            </ul>
+              
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+  {% endblock %}

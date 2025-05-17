@@ -1,0 +1,103 @@
+{% extends 'base_cn.html' %}
+{% load static %}
+{% block content %}
+  <main id="main">
+   <!-- ======= Our Portfolio Section ======= -->
+   <section class="breadcrumbs">
+    <div class="container">
+     <div class="d-flex justify-content-between align-items-center">
+      <h2>
+       项目详情
+      </h2>
+      <ol>
+       <li>
+        <a href="/cn/">
+         首页
+        </a>
+       </li>
+       <li>
+        <a href="/cn/portfolio/">
+         项目
+        </a>
+       </li>
+       <li>
+        项目详情
+       </li>
+      </ol>
+     </div>
+    </div>
+   </section>
+   <!-- End Our Portfolio Section -->
+   <!-- ======= Portfolio Details Section ======= -->
+   <section class="portfolio-details" id="portfolio-details">
+    <div class="container">
+     <div class="row gy-4">
+      <div class="col-lg-8">
+       <div class="portfolio-details-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+         <div class="swiper-slide">
+          <img alt="" src="{% static 'assets/img/portfolio/portfolio-4.jpg' %}"/>
+         </div>
+        </div>
+        <div class="swiper-pagination">
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4">
+       <div class="portfolio-info">
+        <h3>
+         项目信息
+        </h3>
+        <ul>
+         <li>
+          <strong>
+           类别
+          </strong>
+          : IOS应用程序
+         </li>
+         <li>
+          <strong>
+           客户
+          </strong>
+          : 东京某内科诊所
+         </li>
+         <li>
+          <strong>
+           项目时间
+          </strong>
+          : 2021年7月1日
+         </li>
+        </ul>
+       </div>
+       <div class="portfolio-description">
+        <h2>
+         诊所问卷调查系统一体化外包开发
+        </h2>
+        <p>
+         承接了初诊者问卷调查系统的设计与开发。
+        </p>
+        <p>
+         在与诊所医生多次讨论需求后，完成了iPad应用程序的功能设计与实现。
+        </p>
+        <p>
+         实现了以下功能：
+        </p>
+        <ul>
+         <li>
+          问卷注册功能
+         </li>
+         <li>
+          数据传输功能
+         </li>
+         <li>
+          邮件一键发送功能
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End Portfolio Details Section -->
+  </main>
+  {% endblock %}

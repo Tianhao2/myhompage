@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <main id="main">
+
+    <!-- ======= Our Portfolio Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>プロジェクト 詳細</h2>
+          <ol>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="portfolio.html">プロジェクト</a></li>
+            <li>プロジェクト 詳細</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Our Portfolio Section -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-5.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>プロジェクト情報</h3>
+              <ul>
+                <li><strong>カテゴリー</strong>:Salesforce CRM</li>
+                <li><strong>お客様</strong>: 大手保険会社P様</li>
+                <li><strong>プロジェクト時間</strong>: 01 May, 2021</li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>大手保険代理店CRMシステム</h2>
+              <p>
+                　　Salesforce Cloudプラットフォーム上で構築した保険代理店CRMシステムが顧客データを全社で一元管理を実現、募集人、保険会社社員、顧客のコミュニケーションがより効率的行うことを実現した。
+              </p>
+              <p>　　ビジネスモデル構築が競争優位性獲得のカギを握る</p>
+
+			<p>　　今まで、それぞれの代理店が持っている顧客データは情報重複や、分析し辛い課題を抱えていたが、このプロジェクトで構築された新しい代理店システムを通して、顧客データを一元管理が実現でき、保険会社と代理店間の情報連携がよりスムースに行われることができた。 さらに、360度の顧客ビューが作れるようになり、より良いサービスが提供できることで、顧客満足度向上に大きな貢献になった。
+            </p>
+              
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+  {% endblock %}

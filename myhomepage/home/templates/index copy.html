@@ -1,0 +1,535 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const overlay = document.querySelector('.hero-overlay');
+      const backgroundImages = [
+        "url('/static/assets/img/hero-bg-HP.jpg')",
+        "url('/static/assets/img/hero-bg-meetup.jpg')",
+        "url('/static/assets/img/hero-bg-learn.jpg')"
+      ];
+
+      const carousel = document.getElementById('heroCarousel');
+      if (carousel) {
+        carousel.addEventListener('slide.bs.carousel', function (e) {
+          const nextIndex = e.to;
+          overlay.style.backgroundImage = `linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), ${backgroundImages[nextIndex]}`;
+        });
+      }
+    });
+  </script>
+
+  <!-- ======= Hero Section ======= -->
+  <section class="d-flex justify-cntent-center align-items-center" id="hero">
+    <div class="hero-overlay"></div> 
+    <div class="container carousel carousel-fade" data-bs-interval="5000" data-bs-ride="carousel" id="heroCarousel">
+      <!-- Slide 1 -->
+      <div class="carousel-item active bg-slide-1">
+      <div class="carousel-container">
+        <h2 class="animate__animated animate__fadeInDown">
+        優秀な技術者を育つ、
+        </h2>
+        <h2 class="animate__animated animate__fadeInDown">
+        より良いITサービスを通じて社会に貢献する。
+        </h2>
+        <a class="btn-get-started animate__animated animate__fadeInUp" href="#main">
+        スタート
+        </a>
+      </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item bg-slide-2">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Japan Mulesoft Meetup運営</h2>
+          <p class="animate__animated animate__fadeInDown">日本の私たちは Japan Mulesoft Meetup の運営に参加しており、多くの有名企業と共にMulesoftの普及に貢献しています。興味がありましたら、ぜひお気軽にご参加ください！！</p>
+          <a href="https://meetups.mulesoft.com/online-group-japan/" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item bg-slide-3">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">無料ローコード、クラウド開発育成サービス</h2>
+          <p class="animate__animated animate__fadeInDown">弊社は創業以来、在日中国人IT技術者の技術力およびビジネススキルの向上を支援することに尽力してまいりました。<br>
+            定期的にローコードやクラウドに関する学習コースを提供しており、多くの技術者が視野を広げ、自己成長を実現する手助けをしてきました。</p>
+          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
+  </section>
+  <!-- End Hero -->
+  <main id="main">
+   <section class="services">
+    <div class="container">
+     <div class="section-title" id="service">
+      <h2>
+       サービス
+      </h2>
+      <p>
+       Salesforce、Mulesoft、AWSなど製品系システム導入、定着化
+
+            IT人材育成及びシステムの開発・保守・運用の人材派遣
+            
+            各種システムの請負開発
+      </p>
+     </div>
+     <div class="row">
+      <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
+       <div class="icon-box icon-box-pink">
+        <div class="icon">
+         <i class="bx bxl-dribbble">
+         </i>
+        </div>
+        <h4 class="title">
+         <a href="">
+          製品系システム導入、定着化
+         </a>
+        </h4>
+        <p class="description">
+         お客様が抱えている経営課題を製品の導入、定着化で解決します。CRM、ERPなど経験が優れた専門家チームが確保しており、日々お客様の成功を努力しています。
+        </p>
+       </div>
+      </div>
+      <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+       <div class="icon-box icon-box-cyan">
+        <div class="icon">
+         <i class="bx bx-file">
+         </i>
+        </div>
+        <h4 class="title">
+         <a href="">
+          IT人材育成
+         </a>
+        </h4>
+        <p class="description">
+         人材確保のために、社内外の技術者に対して教育を定期化、制度化しており、常にお客様に優秀な人材を提供しています。
+        </p>
+       </div>
+      </div>
+      <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+       <div class="icon-box icon-box-green">
+        <div class="icon">
+         <i class="bx bx-tachometer">
+         </i>
+        </div>
+        <h4 class="title">
+         <a href="">
+          システム・ソフトウェア受託開発
+         </a>
+        </h4>
+        <p class="description">
+         業務分析やシステム最適化計画などのシステムコンサルティングから、システムの構築、運用、保守までトータルでサポートいたします。
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End Services Section -->
+   <!-- ======= Why Us Section ======= -->
+   <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+    <div class="container">
+     <div class="row">
+      <div class="col-lg-6 video-box">
+       <img alt="" class="img-fluid" src="{% static 'assets/img/why-us.jpg' %}"/>
+       <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a> -->
+      </div>
+      <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+       <div class="icon-box">
+        <div class="icon">
+         <i class="bx bx-fingerprint">
+         </i>
+        </div>
+        <h4 class="title">
+         <a href="">
+          常に成長できる環境構築
+         </a>
+        </h4>
+        <p class="description">
+         技術相談窓口設定し状況を把握しています。
+        </p>
+        <p class="description">
+         状況に応じて育成企画を作成します。
+        </p>
+        <p class="description">
+         トラブル発生を避けるため常に緊急サポートチームが設立しました。
+        </p>
+       </div>
+       <div class="icon-box">
+        <div class="icon">
+         <i class="bx bx-gift">
+         </i>
+        </div>
+        <h4 class="title">
+         <a href="">
+          人々の力を合わせよう！
+         </a>
+        </h4>
+        <p class="description">
+         チームの目標をはっきり立てること。
+        </p>
+        <p class="description">
+         人々の成長背景や、能力などの差異が存在したことを認めます。
+        </p>
+        <p class="description">
+         お互いに理解を深めるコミュニケーション場所を設定し、個人が得意なことを担当させながら潜在能力を深掘りできるような環境を構築しています。
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End Why Us Section -->
+   <!-- ======= Portfolio Section ======= -->
+   <section class="portfolio">
+    <div class="container">
+     <div class="section-title">
+      <h2>
+       プロジェクト実績
+      </h2>
+      <p>
+       今までキーマンが経験したプロジェクトを紹介いたします。
+      </p>
+     </div>
+     <div class="row">
+      <div class="col-lg-12">
+       <ul id="portfolio-flters">
+        <li class="filter-active" data-filter="*">
+         すべて
+        </li>
+        <li data-filter=".filter-app">
+         製品導入
+        </li>
+        <li data-filter=".filter-card">
+         開発支援
+        </li>
+        <li data-filter=".filter-web">
+         請負開発
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="row portfolio-container" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out">
+      <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+       <div class="portfolio-item">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/portfolio/portfolio-1.jpg' %}"/>
+        <div class="portfolio-info">
+         <h3>
+          製品導入
+         </h3>
+         <p style="color: white;">
+          ある大手銀行CRMシステム
+         </p>
+         <div>
+          <a class="portfolio-lightbox" data-gallery="portfolioGallery" href="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" title="製品導入">
+           <i class="bx bx-plus">
+           </i>
+          </a>
+          <a href="portfolio-details1.html" title="More Details">
+           <i class="bx bx-link">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
+       <div class="portfolio-item">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/portfolio/portfolio-2.jpg' %}"/>
+        <div class="portfolio-info">
+         <h3>
+          開発支援
+         </h3>
+         <p style="color: white;">
+          オンライン決済システムの設計と開発
+         </p>
+         <div>
+          <a class="portfolio-lightbox" data-gallery="portfolioGallery" href="{% static 'assets/img/portfolio/portfolio-2.jpg' %}" title="開発支援">
+           <i class="bx bx-plus">
+           </i>
+          </a>
+          <a href="portfolio-details2.html" title="Portfolio Details">
+           <i class="bx bx-link">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+       <div class="portfolio-item">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/portfolio/portfolio-3.jpg' %}"/>
+        <div class="portfolio-info">
+         <h3>
+          製品導入
+         </h3>
+         <p style="color: white;">
+          生産業者A様の販売支援システム
+         </p>
+         <div>
+          <a class="portfolio-lightbox" data-gallery="portfolioGallery" href="{% static 'assets/img/portfolio/portfolio-3.jpg' %}" title="製品導入">
+           <i class="bx bx-plus">
+           </i>
+          </a>
+          <a href="portfolio-details3.html" title="Portfolio Details">
+           <i class="bx bx-link">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
+       <div class="portfolio-item">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/portfolio/portfolio-4.jpg' %}"/>
+        <div class="portfolio-info">
+         <h3>
+          請負開発
+         </h3>
+         <p style="color: white;">
+          クリニックアンケート調査システム導入一括請負開発
+         </p>
+         <div>
+          <a class="portfolio-lightbox" data-gallery="portfolioGallery" href="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" title="請負開発">
+           <i class="bx bx-plus">
+           </i>
+          </a>
+          <a href="portfolio-details4.html" title="Portfolio Details">
+           <i class="bx bx-link">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+       <div class="portfolio-item">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/portfolio/portfolio-5.jpg' %}"/>
+        <div class="portfolio-info">
+         <h3>
+          製品導入
+         </h3>
+         <p style="color: white;">
+          外資保険会社基幹システム
+         </p>
+         <div>
+          <a class="portfolio-lightbox" data-gallery="portfolioGallery" href="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" title="製品導入">
+           <i class="bx bx-plus">
+           </i>
+          </a>
+          <a href="portfolio-details5.html" title="Portfolio Details">
+           <i class="bx bx-link">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End Portfolio Section -->
+   <!-- ======= Features Section ======= -->
+   <section class="features">
+    <div class="container">
+     <div class="section-title">
+      <h2>
+       企業イベント
+      </h2>
+      <p>
+       今までキーマンが経験したプロジェクトを紹介いたします。
+      </p>
+     </div>
+     <div class="row" data-aos="fade-up">
+      <div class="col-md-5">
+       <img alt="" class="img-fluid" src="{% static 'assets/img/features-2.svg' %}"/>
+      </div>
+      <div class="col-md-7 pt-4">
+       <h3>
+        会社設立
+       </h3>
+       <p class="fst-italic">
+        2020年12月　　　会社設立
+       </p>
+      </div>
+     </div>
+     <div class="row" data-aos="fade-up">
+      <div class="col-md-5 order-1 order-md-2">
+       <img alt="" class="img-fluid" src="{% static 'assets/img/features-1.JPG' %}"/>
+      </div>
+      <div class="col-md-7 pt-5 order-2 order-md-1">
+       <h3>
+        Salesforceセミナー
+       </h3>
+       <p class="fst-italic">
+        2022年秋　　　Salesforce開発必要なスキル、知識紹介
+       </p>
+       <ul>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         設計、実装、テスト工程作業内容とやり方
+        </li>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         データ連携の設定及び連携ツールの紹介
+        </li>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         プロジェクト実践
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="row" data-aos="fade-up">
+      <div class="col-md-5">
+       <img alt="" class="img-fluid" src="{% static 'assets/img/office.jpeg' %}"/>
+      </div>
+      <div class="col-md-7 pt-4">
+       <h3>
+        平河町オフィス契約
+       </h3>
+       <p class="fst-italic">
+        2023年3月　　　千代田区平河町オフィス増設
+       </p>
+      </div>
+     </div>
+     <div class="row" data-aos="fade-up">
+      <div class="col-md-5 order-1 order-md-2">
+       <img alt="" class="img-fluid" src="{% static 'assets/img/awslearning.jpg' %}"/>
+      </div>
+      <div class="col-md-7 pt-5 order-2 order-md-1">
+       <h3>
+        AWSオフライン勉強会
+       </h3>
+       <p class="fst-italic">
+        2023年9月〜2023年10月
+       </p>
+       <ul>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         内容：AWS開発基本知識紹介
+        </li>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         講師：文先生（AWSコンサルタント）
+        </li>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         参加者：１2名
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="row" data-aos="fade-up">
+      <div class="col-md-5">
+       <a href="https://meetups.mulesoft.com/online-group-japan/" target="_blank">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/mulesoftmeetup.png' %}"/>
+       </a>
+      </div>
+      <div class="col-md-7 pt-4">
+       <h3>
+        Japan Mulesoft Meetup運営始まり
+       </h3>
+       <p class="fst-italic">
+        2024年春
+       </p>
+       <ul>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         Japan MuleSoft Meetup GroupはAnypoint Platform, MuleRuntime、Anypoint Studio、
+        </li>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         エンタープライズインテグレーション、Webサービス、REST API、マイクロサービスなど、
+        </li>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         MuleSoftに関連するテクノロジーを利用しているもしくは興味がある全ての方のためのグループです。全てのイベント及び情報は日本語によって提供されます。
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="row" data-aos="fade-up">
+      <div class="col-md-5 order-1 order-md-2">
+       <img alt="" class="img-fluid" src="{% static 'assets/img/taiwanmulesoft.png' %}"/>
+      </div>
+      <div class="col-md-7 pt-5 order-2 order-md-1">
+       <h3>
+        Mulesoft台湾事業展開
+       </h3>
+       <p class="fst-italic">
+        2025年春
+       </p>
+       <ul>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         MuleSoft台湾開発センター設立準備中！
+        </li>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         台湾の優れたIT人材、アジア市場へのアクセス、DX推進環境を活かし、
+         <br/>
+         企業のデジタル変革を加速！
+        </li>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         🚀 採用＆パートナー募集中！
+        </li>
+       </ul>
+      </div>
+     </div>
+     <!--         <div class="row" data-aos="fade-up">
+          <div class="col-md-5">
+            <img src="assets/img/features-3.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5">
+            <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
+            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+            <ul>
+              <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="assets/img/features-4.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1">
+            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div> -->
+    </div>
+   </section>
+   <!-- End Features Section -->
+  </main>
+  <!-- End #main -->
+  {% endblock %}

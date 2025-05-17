@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <main id="main">
+
+    <!-- ======= Our Portfolio Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>プロジェクト 詳細</h2>
+          <ol>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="portfolio.html">プロジェクト</a></li>
+            <li>プロジェクト 詳細</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Our Portfolio Section -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-2.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>プロジェクト情報</h3>
+              <ul>
+                <li><strong>カテゴリー</strong>:Webシステム（Terasoluna）</li>
+                <li><strong>お客様</strong>: 日本大手決済会社</li>
+                <li><strong>プロジェクト時間</strong>: 01 May, 2014</li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>オンライン決済システムの設計と開発</h2>
+              <p>
+                　　オンライン決済システムは加盟店からの支払、ポイント計算、移転などの機能を構築しました。
+              </p>
+              <p>　　お客様が満足できるサービスを提供するため、下記のポイントでチームを構成しました。</p>
+
+			<ul>
+	            <li>リーダーシップがよいPMを選定した上でサーブリーダも補助体制構成しました。</li>
+	            <li>決済業務に詳しい設計経験者を調達し、教育担当者に着任させました。</li>
+	            <li>オンライン決済システムなので、セキュリティ対応経験及び性能対応経験が優れたSEを調整しました。</li>
+	            <li>経験がちょっと浅いメンバーに対して、技術と業務の教育を定期化し推進しました。</li>
+            </ul>
+              
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  {% endblock %}

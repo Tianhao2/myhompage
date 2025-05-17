@@ -1,0 +1,22 @@
+version: 0.0
+os: linux
+files:
+  - source: static/
+    destination: /usr/share/nginx/html
+    overwrite: true
+  - source: config/nginx.conf
+    destination: /etc/nginx/
+    overwrite: true
+hooks:
+  BeforeInstall:
+    - location: scripts/stop_nginx.sh
+      timeout: 60
+      runas: root
+  AfterInstall:
+    - location: scripts/install_nginx.sh
+      timeout: 60
+      runas: root
+  ApplicationStart:
+    - location: scripts/start_nginx.sh
+      timeout: 60
+      runas: root

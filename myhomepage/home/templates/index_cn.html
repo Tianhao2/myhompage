@@ -1,0 +1,501 @@
+{% extends 'base_cn.html' %}
+{% load static %}
+{% block content %}
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const overlay = document.querySelector('.hero-overlay');
+      const backgroundImages = [
+        "url('/static/assets/img/hero-bg-HP.jpg')",
+        "url('/static/assets/img/hero-bg-meetup.jpg')",
+        "url('/static/assets/img/hero-bg-learn.jpg')"
+      ];
+
+      const carousel = document.getElementById('heroCarousel');
+      if (carousel) {
+        carousel.addEventListener('slide.bs.carousel', function (e) {
+          const nextIndex = e.to;
+          overlay.style.backgroundImage = `linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), ${backgroundImages[nextIndex]}`;
+        });
+      }
+    });
+  </script>
+  <!-- ======= Hero Section ======= -->
+  <section class="d-flex justify-cntent-center align-items-center" id="hero">
+    <div class="hero-overlay"></div> 
+    <div class="container carousel carousel-fade" data-bs-interval="5000" data-bs-ride="carousel" id="heroCarousel">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">
+          培养优秀技术人才，
+          </h2>
+          <h2 class="animate__animated animate__fadeInDown">
+          通过更好的IT服务为社会做出贡献。
+          </h2>
+          <a class="btn-get-started animate__animated animate__fadeInUp" href="#main">
+          开始
+          </a>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item item2">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Japan Mulesoft Meetup运营</h2>
+          <p class="animate__animated animate__fadeInUp">我们参与了Japan Mulesoft Meetup的运营，和众多知名企业一起为mulesoft的推广贡献力量，欢迎大家踊跃参加！</p>
+          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item item3">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">免费lowcode，cloud进阶培训</h2>
+          <p class="animate__animated animate__fadeInUp">公司成立以来，一直致力于帮助在日华人IT从业者技术能力和业务能力的提升，我们定期提供lowcode，cloud相关的学习课程，一经帮助众多技术者拓宽了视野，实现了自我提升。</p>
+          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
+  </section>
+  <!-- End Hero -->
+  <main id="main">
+   <section class="services">
+    <div class="container">
+     <div class="section-title" id="service">
+      <h2>
+       服务
+      </h2>
+      <p>
+       Salesforce、Mulesoft、AWS等产品系统导入与实施
+
+            IT人才培养及系统开发、维护、运营的人才派遣
+            
+            各类系统的外包开发
+      </p>
+     </div>
+     <div class="row">
+      <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
+       <div class="icon-box icon-box-pink">
+        <div class="icon">
+         <i class="bx bxl-dribbble">
+         </i>
+        </div>
+        <h4 class="title">
+         <a href="">
+          产品系统导入与实施
+         </a>
+        </h4>
+        <p class="description">
+         通过产品导入和实施解决客户面临的经营问题。我们拥有一支经验丰富的专家团队，致力于为客户的成功而努力。
+        </p>
+       </div>
+      </div>
+      <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+       <div class="icon-box icon-box-cyan">
+        <div class="icon">
+         <i class="bx bx-file">
+         </i>
+        </div>
+        <h4 class="title">
+         <a href="">
+          IT人才培养
+         </a>
+        </h4>
+        <p class="description">
+         为了确保人才供应，我们定期为内部和外部技术人员提供培训，始终为客户提供优秀的人才。
+        </p>
+       </div>
+      </div>
+      <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+       <div class="icon-box icon-box-green">
+        <div class="icon">
+         <i class="bx bx-tachometer">
+         </i>
+        </div>
+        <h4 class="title">
+         <a href="">
+          系统与软件外包开发
+         </a>
+        </h4>
+        <p class="description">
+         从业务分析、系统优化规划等系统咨询到系统构建、运营和维护，我们提供全方位的支持。
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End Services Section -->
+   <!-- ======= Why Us Section ======= -->
+   <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+    <div class="container">
+     <div class="row">
+      <div class="col-lg-6 video-box">
+       <img alt="" class="img-fluid" src="{% static 'assets/img/why-us.jpg' %}"/>
+      </div>
+      <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+       <div class="icon-box">
+        <div class="icon">
+         <i class="bx bx-fingerprint">
+         </i>
+        </div>
+        <h4 class="title">
+         <a href="">
+          构建持续成长的环境
+         </a>
+        </h4>
+        <p class="description">
+         设立技术咨询窗口，实时掌握情况。
+        </p>
+        <p class="description">
+         根据情况制定培养计划。
+        </p>
+        <p class="description">
+         设立紧急支持团队，避免问题发生。
+        </p>
+       </div>
+       <div class="icon-box">
+        <div class="icon">
+         <i class="bx bx-gift">
+         </i>
+        </div>
+        <h4 class="title">
+         <a href="">
+          团结协作，共创未来！
+         </a>
+        </h4>
+        <p class="description">
+         明确团队目标。
+        </p>
+        <p class="description">
+         承认成员成长背景和能力的差异。
+        </p>
+        <p class="description">
+         设立沟通平台，让每个人发挥所长，挖掘潜力。
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End Why Us Section -->
+   <!-- ======= Portfolio Section ======= -->
+   <section class="portfolio">
+    <div class="container">
+     <div class="section-title">
+      <h2>
+       项目实绩
+      </h2>
+      <p>
+       以下是核心成员参与的项目介绍。
+      </p>
+     </div>
+     <div class="row">
+      <div class="col-lg-12">
+       <ul id="portfolio-flters">
+        <li class="filter-active" data-filter="*">
+         全部
+        </li>
+        <li data-filter=".filter-app">
+         产品导入
+        </li>
+        <li data-filter=".filter-card">
+         开发支持
+        </li>
+        <li data-filter=".filter-web">
+         外包开发
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="row portfolio-container" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out">
+      <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+       <div class="portfolio-item">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/portfolio/portfolio-1.jpg' %}"/>
+        <div class="portfolio-info">
+         <h3>
+          产品导入
+         </h3>
+         <p style="color: white;">
+          某大型银行CRM系统
+         </p>
+         <div>
+          <a class="portfolio-lightbox" data-gallery="portfolioGallery" href="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" title="产品导入">
+           <i class="bx bx-plus">
+           </i>
+          </a>
+          <a href="/cn/portfolio-details1/" title="More Details">
+           <i class="bx bx-link">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
+       <div class="portfolio-item">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/portfolio/portfolio-2.jpg' %}"/>
+        <div class="portfolio-info">
+         <h3>
+          开发支持
+         </h3>
+         <p style="color: white;">
+          在线支付系统的设计与开发
+         </p>
+         <div>
+          <a class="portfolio-lightbox" data-gallery="portfolioGallery" href="{% static 'assets/img/portfolio/portfolio-2.jpg' %}" title="开发支持">
+           <i class="bx bx-plus">
+           </i>
+          </a>
+          <a href="/cn/portfolio-details2/" title="Portfolio Details">
+           <i class="bx bx-link">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+       <div class="portfolio-item">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/portfolio/portfolio-3.jpg' %}"/>
+        <div class="portfolio-info">
+         <h3>
+          产品导入
+         </h3>
+         <p style="color: white;">
+          生产商A的销售支持系统
+         </p>
+         <div>
+          <a class="portfolio-lightbox" data-gallery="portfolioGallery" href="{% static 'assets/img/portfolio/portfolio-3.jpg' %}" title="产品导入">
+           <i class="bx bx-plus">
+           </i>
+          </a>
+          <a href="/cn/portfolio-details3/" title="Portfolio Details">
+           <i class="bx bx-link">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
+       <div class="portfolio-item">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/portfolio/portfolio-4.jpg' %}"/>
+        <div class="portfolio-info">
+         <h3>
+          外包开发
+         </h3>
+         <p style="color: white;">
+          诊所问卷调查系统一体化外包开发
+         </p>
+         <div>
+          <a class="portfolio-lightbox" data-gallery="portfolioGallery" href="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" title="外包开发">
+           <i class="bx bx-plus">
+           </i>
+          </a>
+          <a href="/cn/portfolio-details4/" title="Portfolio Details">
+           <i class="bx bx-link">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+       <div class="portfolio-item">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/portfolio/portfolio-5.jpg' %}"/>
+        <div class="portfolio-info">
+         <h3>
+          产品导入
+         </h3>
+         <p style="color: white;">
+          外资保险公司核心系统
+         </p>
+         <div>
+          <a class="portfolio-lightbox" data-gallery="portfolioGallery" href="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" title="产品导入">
+           <i class="bx bx-plus">
+           </i>
+          </a>
+          <a href="/cn/portfolio-details5/" title="Portfolio Details">
+           <i class="bx bx-link">
+           </i>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End Portfolio Section -->
+   <!-- ======= Features Section ======= -->
+   <section class="features">
+    <div class="container">
+     <div class="section-title">
+      <h2>
+       企业活动
+      </h2>
+      <p>
+       以下是核心成员参与的项目介绍。
+      </p>
+     </div>
+     <div class="row" data-aos="fade-up">
+      <div class="col-md-5">
+       <img alt="" class="img-fluid" src="{% static 'assets/img/features-2.svg' %}"/>
+      </div>
+      <div class="col-md-7 pt-4">
+       <h3>
+        公司成立
+       </h3>
+       <p class="fst-italic">
+        2020年12月　　　公司成立
+       </p>
+      </div>
+     </div>
+     <div class="row" data-aos="fade-up">
+      <div class="col-md-5 order-1 order-md-2">
+       <img alt="" class="img-fluid" src="{% static 'assets/img/features-1.JPG' %}"/>
+      </div>
+      <div class="col-md-7 pt-5 order-2 order-md-1">
+       <h3>
+        Salesforce研讨会
+       </h3>
+       <p class="fst-italic">
+        2022年秋　　　介绍Salesforce开发所需的技能和知识
+       </p>
+       <ul>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         设计、实施、测试阶段的工作内容和方法
+        </li>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         数据联动设置及联动工具介绍
+        </li>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         项目实践
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="row" data-aos="fade-up">
+      <div class="col-md-5">
+       <img alt="" class="img-fluid" src="{% static 'assets/img/office.jpeg' %}"/>
+      </div>
+      <div class="col-md-7 pt-4">
+       <h3>
+        平河町办公室签约
+       </h3>
+       <p class="fst-italic">
+        2023年3月　　　千代田区平河町办公室增设
+       </p>
+      </div>
+     </div>
+     <div class="row" data-aos="fade-up">
+      <div class="col-md-5 order-1 order-md-2">
+       <img alt="" class="img-fluid" src="{% static 'assets/img/awslearning.jpg' %}"/>
+      </div>
+      <div class="col-md-7 pt-5 order-2 order-md-1">
+       <h3>
+        AWS线下学习会
+       </h3>
+       <p class="fst-italic">
+        2023年9月〜2023年10月
+       </p>
+       <ul>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         内容：AWS开发基础知识介绍
+        </li>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         讲师：文老师（AWS顾问）
+        </li>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         参与者：12名
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="row" data-aos="fade-up">
+      <div class="col-md-5">
+       <a href="https://meetups.mulesoft.com/online-group-japan/" target="_blank">
+        <img alt="" class="img-fluid" src="{% static 'assets/img/mulesoftmeetup.png' %}"/>
+       </a>
+      </div>
+      <div class="col-md-7 pt-4">
+       <h3>
+        Japan Mulesoft Meetup运营开始
+       </h3>
+       <p class="fst-italic">
+        2024年春
+       </p>
+       <ul>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         Japan MuleSoft Meetup Group是为使用Anypoint Platform、MuleRuntime、Anypoint Studio、
+        </li>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         企业集成、Web服务、REST API、微服务等MuleSoft相关技术的所有人士设立的。
+        </li>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         所有活动和信息均以日语提供。
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="row" data-aos="fade-up">
+      <div class="col-md-5 order-1 order-md-2">
+       <img alt="" class="img-fluid" src="{% static 'assets/img/taiwanmulesoft.png' %}"/>
+      </div>
+      <div class="col-md-7 pt-5 order-2 order-md-1">
+       <h3>
+        Mulesoft台湾业务扩展
+       </h3>
+       <p class="fst-italic">
+        2025年春
+       </p>
+       <ul>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         MuleSoft台湾开发中心设立准备中！
+        </li>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         利用台湾优秀的IT人才、亚洲市场准入和数字化转型环境，
+         <br/>
+         加速企业数字化变革！
+        </li>
+        <li>
+         <i class="bi bi-check">
+         </i>
+         🚀 人才招募＆協力会社募集中！
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End Features Section -->
+  </main>
+  <!-- End #main -->
+  {% endblock %}

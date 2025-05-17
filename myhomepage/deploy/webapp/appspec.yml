@@ -1,0 +1,18 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/webapp
+hooks:
+  BeforeInstall:
+    - location: scripts/stop_webapp.sh
+      timeout: 60
+      runas: ec2-user
+  AfterInstall:
+    - location: scripts/install_webapp.sh
+      timeout: 60
+      runas: ec2-user
+  ApplicationStart:
+    - location: scripts/start_webapp.sh
+      timeout: 60
+      runas: ec2-user
